@@ -1,0 +1,114 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body:not(.anzeige) {
+    user-select: none;
+}
+
+section {
+    width: 400px;
+    height: 450px;
+    flex-direction: column;
+    margin: 20% auto;
+    border: black 3px solid;
+}
+
+section h3 {
+    text-align: center;
+}
+
+/* anzeige */
+
+.anzeige {
+    height: 70px;
+    border: 3px thick gray;
+    background-color: black;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* nummern */
+.nummern {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: center;
+}
+
+.nummer {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-size: 2em;
+}
+
+
+.nummer:last-child {
+    width: 120px;
+}
+
+.nummer:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+/* operationen */
+.operationen {
+    width: 192px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.operation {
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 60px;
+    border: 1px solid white;
+    text-align: center;
+    padding: auto 0;
+}
+
+.operation:last-child {
+    width: 140px;
+    font-size: 1em;
+}
+
+.operation:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: 1px red solid;
+}
+
+@media screen and (max-width: 500px) {
+    
+}
